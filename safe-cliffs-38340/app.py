@@ -14,7 +14,7 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-# ŠÂ‹«•Ï”‚©‚çchannel_secretEchannel_access_token‚ğæ“¾
+# ç’°å¢ƒå¤‰æ•°ã‹ã‚‰channel_secretãƒ»channel_access_tokenã‚’å–å¾—
 channel_secret = os.environ['LINE_CHANNEL_SECRET']
 channel_access_token = os.environ['LINE_CHANNEL_ACCESS_TOKEN']
 
