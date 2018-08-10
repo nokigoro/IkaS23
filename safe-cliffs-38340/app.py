@@ -116,7 +116,7 @@ def handle_message(event):
     m_gachi = re.fullmatch(r'(?:ガチマッチ|ガチマ)(\d+)(時)?', text)
     m_regular = re.fullmatch(r'(?:レギュラーマッチ|ナワバリ)(\d+)(時)?', text)
 
-    m_league = "リグマ23"
+    m_league = re.fullmatch(r'(?:リーグマッチ|リグマ)(\d+)(時)?', 'リグマ23時')
    
     if re.fullmatch(r'サーモンラン|バイト', text):
         salmon.salmon(line_bot_api, event)
@@ -292,7 +292,7 @@ def handle_message(event):
         )
     else:
         rule = "league"
-        m_league = 23
+        m_league = re.fullmatch(r'(?:リーグマッチ|リグマ)(\d+)(時)?', 'リグマ23時')
         battle_stage.get_specified_battle_stage(
             line_bot_api, event, rule, m_league)
 
