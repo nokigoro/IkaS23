@@ -288,7 +288,7 @@ def handle_message(event):
                     text="{brand_name}".format(brand_name=brand_name))
             ]
         )
-	else :
+    else :
         rule = "league"
 	    m_league = re.fullmatch(r'(?:リーグマッチ|リグマ)(\d+)(時)?', "リグマ23")
         battle_stage.get_specified_battle_stage(
