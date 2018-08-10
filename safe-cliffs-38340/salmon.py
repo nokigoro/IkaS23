@@ -8,7 +8,7 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, ImagemapSendMessage
 )
 
-
+"""
 def salmon(line_bot_api, event):
     req = urllib.request.Request("https://spla2.yuu26.com/coop/schedule")
     req.add_header("user-agent", "@nohararc")
@@ -67,4 +67,6 @@ def salmon_23open_only(line_bot_api, event):
 	                    now["weapons"][2]["name"], now["weapons"][3]["name"]))
 	            ]
 	        )
+"""
+
 
