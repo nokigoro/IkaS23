@@ -288,6 +288,13 @@ def handle_message(event):
                     text="{brand_name}".format(brand_name=brand_name))
             ]
         )
+	else :
+        rule = "league"
+	    m_league = "23"
+        battle_stage.get_specified_battle_stage(
+            line_bot_api, event, rule, m_league)
+
+
 
 
 if __name__ == "__main__":
