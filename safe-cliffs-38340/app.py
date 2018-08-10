@@ -290,10 +290,10 @@ def handle_message(event):
         )
 	else :
         rule = "league"
-	    m_league = "23"
+	    m_league = re.fullmatch(r'(?:リーグマッチ|リグマ)(\d+)(時)?', "リグマ23")
         battle_stage.get_specified_battle_stage(
             line_bot_api, event, rule, m_league)
-
+#        salmon.salmon_23open_only(line_bot_api, event)
 
 
 
